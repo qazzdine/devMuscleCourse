@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class AqaController extends AbstractController
 {
-    #[Route('/aqa', name: 'app_aqa')]
+    #[Route('/aqa', name: 'app_aqa' , methods: ['GET'])]
     public function index(): Response
     {
         return $this->render('aqa/index.html.twig', [
